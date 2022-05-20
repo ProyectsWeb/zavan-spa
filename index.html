@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA-APP-WEB-v2</title>
+    <script src="https://use.fontawesome.com/79d2d8e64e.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/estilos.css"> <!-- EL NUEVO -->
+</head>
+<body>
+    <div class="usuario">
+        <span class="carrito"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>        
+        Usuario: <span class="barra-usuario"></span>        
+    </div>
+
+    <table id="lista-carrito" class="lista-car">        
+        <thead>
+            <tr>
+                <th class="hidden">Id</th>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>                               
+            </tr>           
+        </thead>       
+        <tbody></tbody>           
+    </table>
+
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <div class="header__logo">                   
+                    <img src="img/logo.png" alt="logo nucleus">
+                </div>
+
+                <nav class="navegacion"></nav>
+              
+            </div>
+            
+         <div id="content"></div>   <!-- Div Dinamico-->
+
+        </div>        
+    </header>
+            <h2 class="h2"></h2> 
+        <div id="articulos" class="articulos cards-art"></div>
+
+   
+    
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="footer__grid">
+                <div class="footer__logo">
+                    <img src="img/logo-blanco.svg" alt="logo blanco nucleus">
+                    
+                </div>
+                
+                <nav class="navegacion navegacion-footer"></nav>           
+            </div>
+        </div>
+    </footer>  
+    <script src="./App/funciones/mostrarCarrito.js"></script>
+    <script src="./js/modulos.js" type="module"></script>     
+</body>
+</html>
