@@ -1,5 +1,8 @@
 import { ROUTER } from "../../js/index.js";
 
+console.log(ROUTER)
+
+
 const vistasDePagina = {
     home: "Home", 
     quees: "¿Qué es?", 
