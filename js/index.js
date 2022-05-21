@@ -21,11 +21,10 @@ export class Router {
         const { paths } = this;
        /*  const { path, template } = paths[page] || paths.error; */
        console.log(paths)
-      /*   const { path, template } = paths[page] || paths.error; */
-        const { path, template } = paths;
+        const { path, template } = paths[page] || paths.error;
+        
 
-        console.log(path);
-        console.log(template);
+        
         const $CONTAINER = document.querySelector("#content");        
         $CONTAINER.innerHTML = template;        
        //window.history.pushState({}, "Genial", path); /* ESTE ES EL QUE TENIA ORIGINALMENTE */
@@ -59,5 +58,3 @@ export class Router {
 }
 
 export const ROUTER = new Router(PATHS);
-
-console.log(ROUTER)
