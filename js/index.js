@@ -53,3 +53,5 @@ export class Router {
 }
 
 export const ROUTER = new Router(PATHS);
+
+console.log(ROUTER)
