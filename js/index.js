@@ -1,6 +1,6 @@
 import { elemArticulos, removerArticulos} from "../App/funciones/fetch.js";
 import { PATHS } from "./routes.js";
-
+console.log(PATHS)
 /* PEGUE ESTE CODIGO QUE VIENE DESDE EL ARCHIVO ROUTER */
 export class Router {
     /*  Metodo inicial */
