@@ -19,7 +19,8 @@ export class Router {
   /*   Permite iniciar la carga de paginas. */    
     load(page = "home") {        
         const { paths } = this;
-        const { path, template } = paths[page] || paths.error;
+       // const { path, template } = paths[page] || paths.error;
+        const { path, template } = paths[page];
         const $CONTAINER = document.querySelector("#content");        
         $CONTAINER.innerHTML = template;        
        //window.history.pushState({}, "Genial", path); /* ESTE ES EL QUE TENIA ORIGINALMENTE */
