@@ -7,7 +7,7 @@ const POSTS = `${API}/posts?_embed`;  /* Este es un ejemplo, en caso de necesita
 const POST = `${API}/posts`;
 const SEARCH = `${API}/search?_embed&search=`;   /* Para implementar un buscador e implementar enpoints */
 
-
+console.log(NAME)
 export {
     NAME,
     DOMAIN,
