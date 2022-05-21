@@ -17,7 +17,7 @@ export class Router {
     }
 
   /*   Permite iniciar la carga de paginas. */    
-    load(page = "home") {        
+    load(page = "/") {        
         const { paths } = this;
        // const { path, template } = paths[page] || paths.error;
         const { path, template } = paths[page];
