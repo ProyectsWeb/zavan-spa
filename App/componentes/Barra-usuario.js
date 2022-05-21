@@ -1,4 +1,4 @@
-export function barraUsuario( nameClase, urlBarraUsuario ){
+/* export function barraUsuario( nameClase, urlBarraUsuario ){
     const $barraUsuario = document.querySelector(nameClase);
 
     fetch( urlBarraUsuario, { })
@@ -11,4 +11,4 @@ export function barraUsuario( nameClase, urlBarraUsuario ){
      console.log(JSON.parse(data));      
     });
     console.log("Estoy en barra usuario")
-}
+} */
