@@ -21,9 +21,9 @@ export class Router {
         const { paths } = this;
        /*  const { path, template } = paths[page] || paths.error; */
        console.log(paths)
-        /* const { path, template } = paths[page] || paths.error; */
+        const { path, template } = paths[page] || paths.error;
 
-        const { path, template } = paths[page];        
+        /* const { path, template } = paths[page];    */     
       console.log(path);
       console.log(template);
         //
@@ -60,4 +60,3 @@ export class Router {
 }
 
 export const ROUTER = new Router(PATHS);
-console.log(ROUTER)
