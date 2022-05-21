@@ -23,7 +23,7 @@ export class Router {
        console.log(paths)
         /* const { path, template } = paths[page] || paths.error; */
 
-        const { path, template } = paths;        
+        const { path, template } = paths[page];        
       console.log(path);
       console.log(template);
         //
