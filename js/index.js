@@ -19,6 +19,8 @@ export class Router {
   /*   Permite iniciar la carga de paginas. */    
     load(page = "home") {        
         const { paths } = this;
+       /*  const { path, template } = paths[page] || paths.error; */
+       console.log(paths)
         const { path, template } = paths[page] || paths.error;
         const $CONTAINER = document.querySelector("#content");        
         $CONTAINER.innerHTML = template;        
