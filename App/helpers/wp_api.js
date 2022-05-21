@@ -1,5 +1,5 @@
 /* const NAME = "localhost:4000/"; */  /* Aqui va el nombre del dominio */
-const NAME = "proyectsweb.github.io/zavan-spa/";  /* Aqui va el nombre del dominio */
+const NAME = "proyectsweb.github.io/zavan-spa";  /* Aqui va el nombre del dominio */
 const DOMAIN = `http://${NAME}`; /* Aqui se puede convinar de acuerdo al dominio completo */
 const SITE = `${DOMAIN}`;
 const API = `${SITE}articulos`;   /* Con esta variable extraigo los datos de los articulos */
