@@ -7,7 +7,7 @@ import { QUEES } from "../App/templates/Quees.js";
 
 export const PATHS = {
     home: {
-        path: "/",
+        path: "/index.html",
         template:  HOME        
     },
     quees: {
