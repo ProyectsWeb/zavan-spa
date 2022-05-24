@@ -6,6 +6,7 @@ export function barraUsuario( nameClase, urlBarraUsuario ){
     .then( data => {    
     const {nombre, apellido} = JSON.parse(data);   
      console.log($barraUsuario);
+console.log(urlBarraUsuario)
 
      $barraUsuario.innerHTML = `${nombre} ${apellido}`;
      console.log(JSON.parse(data));      
