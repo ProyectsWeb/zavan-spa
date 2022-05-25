@@ -1,6 +1,4 @@
-import { barraUsuario } from "../App/componentes/Barra-usuario.js";
- 
- 
+
  /* const NAME = "localhost:4000/"; */  /* Aqui va el nombre del dominio */
  const NAME = "back-spa.herokuapp.com/";   /* Aqui va el nombre del dominio */
 const DOMAIN = `https://${NAME}`; /* Aqui se puede convinar de acuerdo al dominio completo */
@@ -12,7 +10,7 @@ const SEARCH = `${API}/search?_embed&search=`;   /* Para implementar un buscador
 
 console.log(NAME)
 console.log(DOMAIN)
-console.log(barraUsuario)
+
 export {
     NAME,
     DOMAIN,
