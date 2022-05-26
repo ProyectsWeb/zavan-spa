@@ -35,7 +35,7 @@ export class Router {
 
         
 
-        if(pathname === "/index.html"){
+        if(pathname === "/index.html" || pathname === "/zavan-spa"){
           console.log("ESTAMOS MEJORANDO POR EL INDEX")
           window.location.replace("/");
         }else{
