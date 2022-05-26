@@ -33,6 +33,8 @@ export class Router {
         console.log(pathname);    /* /index.html */   /*  / */
 
 
+        
+
         if(pathname === "/index.html"){
           console.log("ESTAMOS MEJORANDO POR EL INDEX")
           window.location.replace("/");
