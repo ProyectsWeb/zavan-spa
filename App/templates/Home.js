@@ -7,7 +7,7 @@ export const HOME = `
 </div>
 
 <div class="header__grafico">
-<img class="header__imagen" src="img/app_1.svg" alt="imagen nucleus app ">
+<img class="header__imagen" src="../img/app_1.svg" alt="imagen nucleus app ">
 </div>
 </div>  
 
