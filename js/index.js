@@ -47,7 +47,7 @@ export class Router {
         console.log(origin)
         const URI = pathname === "/" ? "home" : pathname.replace("/", "");
         console.log(URI);  /*  index.html */  /* home */
-        this.load(URI);            
+        this.load("home");            
                 
     }
 
