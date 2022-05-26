@@ -2,6 +2,23 @@ import { elemArticulos, removerArticulos} from "../App/funciones/fetch.js";
 import { PATHS } from "./routes.js";
 console.log(PATHS)
 /* PEGUE ESTE CODIGO QUE VIENE DESDE EL ARCHIVO ROUTER */
+
+/* console.log(document.URL)
+if(document.URL ==="/index.html"){
+  const URI = pathname === "/" ? "home" : pathname.replace("/", "");
+  console.log(URI)
+  console.log("ESTAMOS EN EL INDEX.HTML")
+} */
+console.log(window)
+console.log(origin)
+if(origin){
+  console.log("ESTS EN EL INDEX JS")
+ /*  window.location.replace("/"); */
+ 
+}
+/* window.location.replace("/"); */
+  
+
 export class Router {
     /*  Metodo inicial */
     constructor(paths) {
@@ -11,21 +28,40 @@ export class Router {
 
     /* Permite inicializar el router */    
     initRouter() {
+         
         const { location: { pathname = "/" } } = window;
+        console.log(pathname);    /* /index.html */   /*  / */
+
+
+        if(pathname === "/index.html"){
+          console.log("ESTAMOS MEJORANDO POR EL INDEX")
+          window.location.replace("/");
+        }else{
+          console.log("YA SALI DEL INDEX BLOQUEADOR")
+        }
+
+
+
+        console.log(origin)
         const URI = pathname === "/" ? "home" : pathname.replace("/", "");
-        this.load(URI);        
+        console.log(URI);  /*  index.html */  /* home */
+        this.load(URI);            
+                
     }
 
   /*   Permite iniciar la carga de paginas. */    
     load(page = "home") {        
+      console.log(origin)
+      
         const { paths } = this;
        /*  const { path, template } = paths[page] || paths.error; */
        console.log(paths)
+       /* console.log(path) */
         const { path, template } = paths[page] || paths.error;
-
+console.log(paths[page])
         /* const { path, template } = paths[page];    */     
       console.log(path);
-      console.log(template);
+    /*   console.log(template); */
         //
         const $CONTAINER = document.querySelector("#content");        
         $CONTAINER.innerHTML = template;        
@@ -60,3 +96,5 @@ export class Router {
 }
 
 export const ROUTER = new Router(PATHS);
+
+

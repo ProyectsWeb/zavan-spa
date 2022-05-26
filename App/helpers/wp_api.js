@@ -10,6 +10,10 @@ const SEARCH = `${API}/search?_embed&search=`;   /* Para implementar un buscador
 
 console.log(NAME)
 console.log(DOMAIN)
+console.log(SITE)
+console.log(API)
+console.log(POSTS)
+console.log(POST)
 
 export {
     NAME,
