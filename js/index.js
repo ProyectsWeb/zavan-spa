@@ -17,7 +17,7 @@ if(origin){
  
 }
 /* window.location.replace("/"); */
-  
+
 
 export class Router {
     /*  Metodo inicial */
@@ -32,7 +32,7 @@ export class Router {
         const { location: { pathname = "/" } } = window;
         console.log(pathname);    /* /index.html */   /*  / */
 
-
+      
         
 
         if(pathname === "/index.html"){
