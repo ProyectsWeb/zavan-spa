@@ -35,9 +35,9 @@ export class Router {
       
         
 
-        if(pathname === "/index.html"){
+        if(pathname === "/index.html" || pathname === "/zavan-spa"){
           console.log("ESTAMOS MEJORANDO POR EL INDEX")
-          window.location.replace("/");
+          window.location.replace("/zavan-spa");
         }else{
           console.log("YA SALI DEL INDEX BLOQUEADOR")
         }
@@ -47,7 +47,7 @@ export class Router {
         console.log(origin)
         const URI = pathname === "/" ? "home" : pathname.replace("/", "");
         console.log(URI);  /*  index.html */  /* home */
-        this.load(URI);            
+        this.load("home");            
                 
     }
 
